@@ -1,4 +1,4 @@
-// Package gocifromslovom implements numbers to text in Bulgarian language
+// Package gocifromslovom implements numbers to text conversion in Bulgarian language
 package gocifromslovom
 
 const (
