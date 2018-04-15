@@ -29,7 +29,7 @@ func main() {
 	// 101.51 сто и един лева и петдесет и една стотинки"
 	fmt.Println(101.51,
 		gocifromslovom.ConvertMale(101)+" лева и "+
-			gocifromslovom.ConvertFemale(51)+" стотинки") // лев е мъжки, а стотитнка е женски род
+			gocifromslovom.ConvertFemale(51)+" стотинки") // лев е мъжки, а стотинка е женски род
 
 	// Пример за конвертиране на суми
 	suma := 58.8
