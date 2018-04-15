@@ -1,13 +1,3 @@
-# gocifromslovom
-Изписване на число с думи (Цифром -> Словом) на Go
-
-## Употреба
-Импортирайте пакета gocifromslovom
-
-```import "github.com/dekiland/gocifromslovom"```
-
-Конвертиране цифром -> словом
-```go
 package main
 
 import (
@@ -31,25 +21,17 @@ func main() {
 	fmt.Println(1000001, gocifromslovom.ConvertMale(1000001)) // 1000001 един милион и едно"
 	fmt.Println("* За конвертиране на числа с плаваща запетая:")
 	// 101.51 сто и един лева и петдесет и една стотинки"
-	fmt.Println(101.51, 
-		gocifromslovom.ConvertMale(101)+" лева "+
-		gocifromslovom.ConvertFemale(51)+" стотинки")
+	fmt.Println(101.51, gocifromslovom.ConvertMale(101)+" лева "+gocifromslovom.ConvertFemale(51)+" стотинки")
 
 	// Пример за конвертиране на суми
 	suma := 58.8
 	lv, st := separateFloat64ByDecimalPoint(suma, 2) // закръгляване 2 цифри след десетичния знак
 	// 58.8 петдесет и осем лева и осемдесет стотинки
-	fmt.Println(suma, 
-		gocifromslovom.ConvertMale(lv)+" лева "+
-		gocifromslovom.ConvertFemale(st)+" стотинки")
+	fmt.Println(suma, gocifromslovom.ConvertMale(lv)+" лева "+gocifromslovom.ConvertFemale(st)+" стотинки")
 
 	// Пример за конвертиране на тегло
 	teglo := 124.56
 	kg, gr := separateFloat64ByDecimalPoint(teglo, 3) // закръгляване 3 цифри след десетичния знак
 	// 58.8 петдесет и осем лева и осемдесет стотинки
-	fmt.Println(teglo, 
-		gocifromslovom.ConvertMale(kg)+" килограма "+
-		gocifromslovom.ConvertFemale(gr)+" грама")
+	fmt.Println(teglo, gocifromslovom.ConvertMale(kg)+" килограма "+gocifromslovom.ConvertFemale(gr)+" грама")
 }
-```
-
