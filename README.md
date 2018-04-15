@@ -30,13 +30,13 @@ func main() {
 
 	//*** Примери за конвертиране цифром в словом на цели числа
 
-	fmt.Println(21, gocifromslovom.ConvertMale(21))
-	// Изход: 21 двадесет и един"
+	fmt.Println(21, gocifromslovom.ConvertMale(21)) // в мъжки род
+	// Изход: 21 двадесет и един
 
-	fmt.Println(-31, gocifromslovom.ConvertFemale(-31))
-	// Изход: -31 минус тридесет и една"
+	fmt.Println(-31, gocifromslovom.ConvertFemale(-31)) // в женски род
+	// Изход: -31 минус тридесет и една
 
-	fmt.Println(1000001, gocifromslovom.ConvertNeutral(1000001))
+	fmt.Println(1000001, gocifromslovom.ConvertNeutral(1000001)) // в среден род
 	// Изход: 1000001 един милион и едно
 
 	fmt.Println(math.MaxInt64, gocifromslovom.ConvertNeutral(math.MaxInt64))
