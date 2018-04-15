@@ -40,9 +40,9 @@ func main() {
 			gocifromslovom.ConvertFemale(st)+" стотинки") // лев е мъжки, а стотитнка е женски род
 
 	// Пример за конвертиране на тегло
-	teglo := 124.56
+	teglo := 124.56089
 	kg, gr := separateFloat64ByDecimalPoint(teglo, 3) // закръгляване 3 цифри след десетичния знак
-	// 124.56 сто двадесет и четири килограма петстотин и шестдесет грама
+	// 124.56089 сто двадесет и четири килограма, петстотин шестдесет и един грама
 	fmt.Println(teglo,
 		gocifromslovom.ConvertMale(kg)+" килограма, "+
 			gocifromslovom.ConvertMale(gr)+" грама") // килограм и грам са в мъжки род
