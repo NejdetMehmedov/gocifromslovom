@@ -31,7 +31,7 @@ func main() {
 	// 58.8 петдесет и осем лева и осемдесет стотинки
 	fmt.Println(suma,
 		gocifromslovom.ConvertMale(lv)+" лева и "+
-			gocifromslovom.ConvertFemale(st)+" стотинки") // лев е мъжки, а стотитнка е женски род
+			gocifromslovom.ConvertFemale(st)+" стотинки") // лев е мъжки, а стотинка е женски род
 
 	// Пример за конвертиране на тегло
 	teglo := 124.56089
