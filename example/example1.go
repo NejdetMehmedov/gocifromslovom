@@ -23,7 +23,7 @@ func main() {
 	// 101.51 сто и един лева и петдесет и една стотинки"
 	fmt.Println(101.51,
 		gocifromslovom.ConvertMale(101)+" лева и "+
-			gocifromslovom.ConvertFemale(51)+" стотинки")
+			gocifromslovom.ConvertFemale(51)+" стотинки") // лев е мъжки, а стотитнка е женски род
 
 	// Пример за конвертиране на суми
 	suma := 58.8
@@ -31,7 +31,7 @@ func main() {
 	// 58.8 петдесет и осем лева и осемдесет стотинки
 	fmt.Println(suma,
 		gocifromslovom.ConvertMale(lv)+" лева и "+
-			gocifromslovom.ConvertFemale(st)+" стотинки")
+			gocifromslovom.ConvertFemale(st)+" стотинки") // лев е мъжки, а стотитнка е женски род
 
 	// Пример за конвертиране на тегло
 	teglo := 124.56
@@ -39,5 +39,5 @@ func main() {
 	// 124.56 сто двадесет и четири килограма петстотин и шестдесет грама
 	fmt.Println(teglo,
 		gocifromslovom.ConvertMale(kg)+" килограма, "+
-			gocifromslovom.ConvertFemale(gr)+" грама")
+			gocifromslovom.ConvertMale(gr)+" грама") // килограм и грам са в мъжки род
 }
