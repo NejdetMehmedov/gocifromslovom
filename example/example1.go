@@ -29,10 +29,10 @@ func main() {
 	fmt.Println(-31, gocifromslovom.ConvertFemale(-31))
 	// Изход: -31 минус тридесет и една
 
-	fmt.Println(1000001, gocifromslovom.ConvertMale(1000001))
+	fmt.Println(1000001, gocifromslovom.ConvertNeutral(1000001))
 	// Изход: 1000001 един милион и едно
 
-	fmt.Println(math.MaxInt64, gocifromslovom.ConvertMale(math.MaxInt64))
+	fmt.Println(math.MaxInt64, gocifromslovom.ConvertNeutral(math.MaxInt64))
 	// Изход: 9223372036854775807 девет квинтилиона двеста двадесет и три квадрилиона
 	// триста седемдесет и два трилиона тридесет и шест милиарда осемстотин петдесет и
 	// четири милиона седемстотин седемдесет и пет хиляди осемстотин и седем
