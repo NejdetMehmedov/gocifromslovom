@@ -7,6 +7,7 @@ import (
 	"github.com/dekiland/gocifromslovom"
 )
 
+// Помощна функция за отделяне на значещите цифри преди и след десетичната точка
 func separateFloat64ByDecimalPoint(value float64, precision int) (leftPart int64, rightPart int64) {
 	intpart, divpart := math.Modf(value)
 	leftPart = int64(intpart)
